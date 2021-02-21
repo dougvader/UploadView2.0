@@ -1,0 +1,14 @@
+<div class="row" id="main">
+  <div class="col-8">
+    <label class="btn btn-default p-0">
+      <input type="file" (change)="FileSelect($event)" />
+    </label>
+  </div>
+
+  <div class="col-4">
+    <button class="btn btn-success btn-sm" [disabled]="!files_selected" (click)="Upload()">
+      Upload
+    </button>
+  </div>
+</div>
+
